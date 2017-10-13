@@ -1,4 +1,4 @@
-A dockerized `eslint` that can make use of presets in `node_modules`.
+A dockerized ESLint that can make use of presets in `node_modules`.
 
 
 ## Build
