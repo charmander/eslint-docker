@@ -1,5 +1,5 @@
 FROM node:8-alpine
-LABEL version=4.8.0
+LABEL version=4.10.0
 USER node
 
 RUN mkdir ~/lint
