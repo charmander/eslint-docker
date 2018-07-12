@@ -1,5 +1,5 @@
-FROM node:8-alpine
-LABEL version=4.19.1
+FROM node:10-alpine
+LABEL version=5.1.0
 USER node
 
 RUN mkdir ~/lint
