@@ -14,7 +14,8 @@ For a `.zshrc` or equivalent.
 
 ```sh
 docker-eslint() {
-	docker image inspect eslint > /dev/null && docker run \
+	docker run \
+		--pull=never \
 		--mount "type=bind,readonly,\"source=${PWD//\"/\"\"}\",destination=/var/build" \
 		--network=none --security-opt=no-new-privileges \
 		--rm -it eslint "$@"
