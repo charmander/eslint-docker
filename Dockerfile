@@ -1,5 +1,5 @@
 FROM node:12-alpine
-LABEL version=5.16.0
+LABEL version=6.0.1
 USER node
 
 RUN mkdir ~/lint
@@ -8,4 +8,4 @@ RUN ln -s /var/build/node_modules ../
 COPY package.json package-lock.json ./
 RUN npm install --ignore-scripts
 WORKDIR /var/build
-ENTRYPOINT ["/home/node/lint/node_modules/.bin/eslint"]
+ENTRYPOINT ["/home/node/lint/node_modules/.bin/eslint", "--cache-location=/tmp/.eslintcache"]
