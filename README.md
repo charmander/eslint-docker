@@ -1,5 +1,10 @@
 A dockerized ESLint that can make use of presets in `node_modules`.
 
+**Deprecated: [faster linters][1] and [better sandboxes][2] are available**
+
+  [1]: https://github.com/denoland/deno_lint
+  [2]: https://github.com/containers/bubblewrap
+
 
 ## Build
 
